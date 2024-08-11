@@ -8,12 +8,18 @@ function ProductSize(props) {
         </span>
     );
 }
+
+
+const menuProductStyles = {
+    div: {margin: "2vw", fontSize: "larger", display: "flex"},
+};
+
 export function MenuProduct(props) {
     const {product} = props;
     if (!product?.name) return;
 
     return (
-        <div style={{margin: "2vw", fontSize: "larger", display: "flex"}}>
+        <div style={menuProductStyles.div}>
             <div style={{flex: 1}}>
                 {product.name}
                 <ProductSize product={product}/>
