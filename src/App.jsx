@@ -1,12 +1,14 @@
 import 'normalize.css';
 import './App.css'
 import {PRODUCTS_DATA} from "./data/data.js";
-import {MenuCard} from "./components/MenuCard.jsx";
+import {MenuCardPage} from "./pages/MenuCardPage.jsx";
+import {PicturesPage} from "./pages/PicturePage.jsx";
 
 function App() {
     return (
         <>
-            <MenuCard products={PRODUCTS_DATA}/>
+            <MenuCardPage products={PRODUCTS_DATA}/>
+            <PicturesPage/>
         </>
     )
 }
