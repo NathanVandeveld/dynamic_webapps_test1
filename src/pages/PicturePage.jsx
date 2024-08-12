@@ -8,6 +8,8 @@ In this case I decided that that's just fine...
 (it's a thin line...)
  */
 
+import {Card, CardGroup, Col, Container, Row} from "react-bootstrap";
+
 const ARTWORKS = [
     {
         id: 1,
@@ -111,20 +113,33 @@ const ARTWORKS = [
 function Picture(props) {
     const {picture} = props;
 
-    return <>
-        <img src={`/images/orange/${picture.name}`}
-             alt={`${picture.name}`}
-             width="100%"
-             style={{margin: "2vw auto 0 auto"}}/>
-        by {picture.author}
-    </>;
+    return (
+        <Col>
+            <Card className="bg-dark-subtle h-100 d-flex flex-column">
+                <Card.Img src={`/images/orange/${picture.name}`} variant="bottom"/>
+                <Card.Body>
+                    <Card.Title>{picture.title}</Card.Title>
+                    <Card.Text>
+                        by {picture.author}
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </Col>
+    );
 }
 
 export function PicturesPage() {
     return (
-        <div style={{margin: "0 2vw"}}>
+        <div className="mx-3">
             <h1>Pictures</h1>
-            {ARTWORKS.map(p => <Picture key={p.id} picture={p}/>)}
+            <Container fluid>
+                <CardGroup>
+                    <Row xs={1} sm={2} md={3} className="g-4">
+                        {ARTWORKS.map(p => <Picture key={p.id} picture={p}/>)}
+                    </Row>
+                </CardGroup>
+            </Container>
+
         </div>
     );
 }
