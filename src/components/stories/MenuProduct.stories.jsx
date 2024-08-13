@@ -21,3 +21,22 @@ const meta = {
 export default meta;
 
 export const Default = {};
+
+
+export const ProductWithoutSize = {
+    args: {
+        product: {...testProduct, size: undefined}
+    },
+}
+
+export const ProductWithoutNote = {
+    args: {
+        product: {...testProduct, note: undefined}
+    },
+}
+
+export const ProductWithoutNameIsEmtpy = {
+    args: {
+        product: {...testProduct, name: undefined}
+    },
+}
