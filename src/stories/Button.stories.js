@@ -47,3 +47,10 @@ export const Small = {
     label: 'Button',
   },
 };
+
+export const Blabla = {
+  args:{
+    primary:false,
+    label:"Button"
+  }
+};

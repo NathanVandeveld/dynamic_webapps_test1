@@ -1,4 +1,9 @@
 /** @type { import('@storybook/react-vite').Preview } */
+import 'normalize.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-tabs/style/react-tabs.css';
+
+/** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
     controls: {
