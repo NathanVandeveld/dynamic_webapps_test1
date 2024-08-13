@@ -105,3 +105,24 @@ export const PERSON_DATA = [
     }
 ];
 ;
+
+export const CAR_DATA = [
+    {
+        id: 1,
+        name: "mijn eerste auto",
+        brand: "Peugeot",
+        type: "204",
+        color: "blauw",
+        year: 1974,
+        note: "klein maar onverwoestbaar",
+    },
+    {
+        id: 2,
+        name: "auto van mijn zus",
+        brand: "Fiat",
+        type: "Punto",
+        color: "geel",
+        year: 2002,
+        note: "die ging altijd kapot",
+    },
+];
