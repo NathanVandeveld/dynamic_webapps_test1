@@ -27,7 +27,7 @@ function ProductNote(props) {
 
 export function MenuProduct(props) {
     const {product} = props;
-    if (!product?.name) return;
+    if (!product?.name || !product?.price) return;
 
     return (
         <>

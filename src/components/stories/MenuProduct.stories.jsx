@@ -40,3 +40,9 @@ export const ProductWithoutNameIsEmtpy = {
         product: {...testProduct, name: undefined}
     },
 }
+
+export const ProductWithoutPriceIsEmpty = {
+    args: {
+        product: {...testProduct, price: undefined}
+    },
+}
