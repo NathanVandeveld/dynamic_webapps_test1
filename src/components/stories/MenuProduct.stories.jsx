@@ -15,6 +15,7 @@ const meta = {
     tags: ['autodocs'],
     args: {
         product: testProduct,
+        isFavorite: false
     },
 };
 

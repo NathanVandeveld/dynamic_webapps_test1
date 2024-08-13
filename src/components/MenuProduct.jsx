@@ -26,12 +26,12 @@ function ProductNote(props) {
 }
 
 export function MenuProduct(props) {
-    const {product} = props;
+    const {product, isFavorite} = props;
     if (!product?.name || !product?.price) return;
 
     return (
         <>
-            <Row className="fs-3">
+            <Row className={`fs-3 ${isFavorite ? 'bg-info-subtle' : ''}`}>
                 <Col>
                     {product.name}
                     <ProductSize product={product}/>
