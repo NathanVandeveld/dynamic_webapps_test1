@@ -2,12 +2,13 @@ import 'normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-tabs/style/react-tabs.css';
 import './App.css'
-import {CAR_DATA, PERSON_DATA, PRODUCTS_DATA} from "./data/data.js";
+import {CAR_DATA, NUMBER_DATA, PERSON_DATA, PRODUCTS_DATA} from "./data/data.js";
 import {MenuCardPage} from "./pages/MenuCardPage.jsx";
 import {PicturesPage} from "./pages/PicturePage.jsx";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import {CarsPage} from "./pages/CarsPage.jsx";
 import {PersonsPage} from "./pages/PersonsPage.jsx";
+import {NumbersPage} from "./pages/NumbersPage.jsx";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Tab>pics</Tab>
                 <Tab>persons</Tab>
                 <Tab>cars</Tab>
+                <Tab>numbers</Tab>
             </TabList>
             <TabPanel>
                 <MenuCardPage products={PRODUCTS_DATA}/>
@@ -29,6 +31,9 @@ function App() {
             </TabPanel>
             <TabPanel>
                 <CarsPage cars={CAR_DATA}/>
+            </TabPanel>
+            <TabPanel>
+                <NumbersPage numbers={NUMBER_DATA}/>
             </TabPanel>
         </Tabs>)
 }
