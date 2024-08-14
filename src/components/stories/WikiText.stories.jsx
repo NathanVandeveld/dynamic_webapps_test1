@@ -9,6 +9,7 @@ const testData = {
         "---",
         "[[zaaien-800x450.jpg",
         "text with a *bold* word.",
+        "text with a _italic_ word.",
     ]
 }
 /** WikiText renders 1 wiki object.
@@ -17,6 +18,8 @@ const testData = {
  * * when a string starts with ---, a line is rendered.
  * * when a string starts with [[, the rest of line contains the filename of an image.
  * * when a part of a string is enclosed between 2 * characters, that part will be rendered as bold.
+ * * when a part of a string is enclosed between 2 _ characters, that part will be rendered as italic.
+ * * bold and italic can not be combined.
  */
 const meta = {
     component: WikiText,
