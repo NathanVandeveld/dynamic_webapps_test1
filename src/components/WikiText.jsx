@@ -2,10 +2,10 @@ import {Section} from "./Section.jsx";
 
 function WikiTextLine(props) {
     const {line} = props;
+    if (line.startsWith("---")) return <hr/>;
+
     return (
-        <div>
-            {line}
-        </div>
+        <div>{line}</div>
     );
 }
 
