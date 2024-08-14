@@ -19,7 +19,89 @@ export const PRODUCTS_DATA = [
     {id: 2, name: "water", price: 1, note: "plat of bruisend"},
     {id: 3, name: "bier", price: 1, size: 25},
     {id: 4, name: "bier", price: 1, size: 33},
-    {id: 5, name: "wijn", price: 2, note:"rood, wit of rosé"},
+    {id: 5, name: "wijn", price: 2, note: "rood, wit of rosé"},
     {id: 6, name: "cava", price: 3}
 ];
 
+
+export const PERSON_DATA = [
+    {
+        id: 1,
+        name: "Jan",
+        age: 18,
+        city: "Mechelen",
+    },
+    {
+        id: 2,
+        name: "Marie",
+        age: 25,
+        city: "Katelijne",
+    },
+    {
+        id: 3,
+        name: "Ahmed",
+        age: 16,
+        city: "Duffel",
+    },
+    {
+        id: 4,
+        name: "Yves",
+        age: 24,
+        city: "Mechelen",
+    },
+    {
+        id: 5,
+        name: "Marijke",
+        age: 16,
+        city: "Duffel",
+    },
+    {
+        id: 6,
+        name: "Furkan",
+        age: 16,
+        city: "Mechelen",
+    },
+    {
+        id: 7,
+        name: "Bart",
+        age: 18,
+        city: "Mechelen",
+    },
+    {
+        id: 8,
+        name: "Marijke",
+        age: 28,
+        city: "Lier",
+    },
+    {
+        id: 9,
+        name: "Dirk",
+        age: 20,
+        city: "Mechelen",
+    },
+    {
+        id: 10,
+        name: "Layla",
+        age: 20,
+        city: "Lint",
+    },
+    {
+        id: 11,
+        name: "Kris",
+        age: 19,
+        city: "Duffel",
+    },
+    {
+        id: 12,
+        name: "Leen",
+        age: 21,
+        city: "Katelijne",
+    },
+    {
+        id: 13,
+        name: "Lieve",
+        age: 20,
+        city: "Mechelen",
+    }
+];
+;
