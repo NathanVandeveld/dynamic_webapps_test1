@@ -8,9 +8,8 @@ function WikiTextLine(props) {
             <img src={`images/wiki/${line.substring(2)}`} className="w-100 h-100" alt=""/>
         </div>
     );
-    return (
-        <div>{line}</div>
-    );
+    const lineParts = line.split("*");
+    return <div>{lineParts.map((p, i) => i % 2 ? <b key={i}>{p}</b> : p)}</div>;
 }
 
 export function WikiText(props) {
