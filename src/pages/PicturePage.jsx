@@ -108,17 +108,23 @@ const ARTWORKS = [
 ];
 
 
-export function PicturesPage() {
-    const picture = ARTWORKS[0];
+function Picture(props) {
+    const {picture} = props;
 
+    return <>
+        <img src={`/images/orange/${picture.name}`}
+             alt={`${picture.name}`}
+             width="100%"
+             style={{margin: "2vw auto 0 auto"}}/>
+        by {picture.author}
+    </>;
+}
+
+export function PicturesPage() {
     return (
         <div style={{margin: "0 2vw"}}>
             <h1>Pictures</h1>
-            <img src={`/images/orange/${picture.name}`}
-                 alt={`${picture.name}`}
-                 width="100%"
-                 style={{margin: "2vw auto 0 auto"}}/>
-            by {picture.author}
+            {ARTWORKS.map(p => <Picture key={p.id} picture={p}/>)}
         </div>
     );
 }
