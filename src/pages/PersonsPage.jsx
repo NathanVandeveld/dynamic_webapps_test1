@@ -9,6 +9,8 @@ export function PersonsPage(props) {
                      title="sorteer op naam"/>
             <Persons persons={persons.toSorted((pl, pr) => pr.name.localeCompare(pl.name))}
                      title="sorteer aflopend op naam"/>
+            <Persons persons={persons.toSorted((pl, pr) => pl.age - pr.age)}
+                     title="sorteer op leeftijd"/>
         </div>
     );
 }
