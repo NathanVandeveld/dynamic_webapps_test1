@@ -7,6 +7,8 @@ export function PersonsPage(props) {
             <Persons persons={persons} title="alle personen"/>
             <Persons persons={persons.toSorted((pl, pr) => pl.name.localeCompare(pr.name))}
                      title="sorteer op naam"/>
+            <Persons persons={persons.toSorted((pl, pr) => pr.name.localeCompare(pl.name))}
+                     title="sorteer aflopend op naam"/>
         </div>
     );
 }
