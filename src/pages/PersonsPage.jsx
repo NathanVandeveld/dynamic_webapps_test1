@@ -74,6 +74,10 @@ export function PersonsPage(props) {
                      title="sorteer op leeftijd"/>
             <PersonAges persons={persons} title="leeftijden"/>
             <Cities persons={persons} title="steden"/>
+            <Persons persons={persons
+                .filter(p => p.city === "Mechelen")
+                .toSorted((pl, pr) => pl.name.localeCompare(pr.name))}
+                     title="personen van Mechelen"/>
         </div>
     );
 }
