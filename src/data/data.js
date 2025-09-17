@@ -114,7 +114,7 @@ export const CAR_DATA = [
         type: "204",
         color: "blauw",
         year: 1974,
-        note: "klein maar onverwoestbaar",
+        note: "klein maar onverwoestbaar"
     },
     {
         id: 2,
@@ -123,6 +123,98 @@ export const CAR_DATA = [
         type: "Punto",
         color: "geel",
         year: 2002,
-        note: "die ging altijd kapot",
+        note: "die ging altijd kapot"
     },
+    {
+        id: 3,
+        name: "die van mijn pa",
+        brand: "Volvo",
+        color: "zwart",
+        year: 1988,
+        note: "veilig, zwaar, onverwoestbaar"
+    },
+    {
+        id: 4,
+        name: "geitje",
+        brand: "Citroën",
+        type: "2CV",
+        year: 1978,
+        note: "het iconische 'geitje'"
+    },
+    {
+        id: 5,
+        name: "oude werkpaard",
+        brand: "Peugeot",
+        type: "505",
+        color: "grijs",
+        year: 1985
+    },
+    {
+        id: 6,
+        name: "stadskarretje",
+        brand: "Fiat",
+        type: "Panda",
+        color: "wit",
+        year: 1990
+    },
+    {
+        id: 7,
+        name: "familiewagen",
+        brand: "Fiat",
+        type: "Tipo",
+        color: "groen",
+        year: 1996
+    },
+    {
+        id: 8,
+        name: "rode rakker",
+        brand: "Citroën",
+        type: "C4",
+        color: "rood",
+        year: 2010
+    },
+    {
+        id: 9,
+        name: "tweede Panda",
+        brand: "Fiat",
+        type: "Panda",
+        color: "rood",
+        year: 1995
+    },
+    {
+        id: 10,
+        name: "werkauto",
+        brand: "Opel",
+        type: "Astra",
+        color: "blauw",
+        year: 2008,
+        note: "handig voor lange ritten"
+    },
+    {
+        id: 11,
+        name: "vakantieauto",
+        brand: "Volkswagen",
+        type: "Golf",
+        color: "geel",
+        year: 2015,
+        note: "betrouwbaar en zuinig"
+    },
+    {
+        id: 12,
+        name: "oldtimer",
+        brand: "Mercedes",
+        type: "190",
+        color: "zwart",
+        year: 1965,
+        note: "prachtig stukje geschiedenis"
+    },
+    {
+        id: 13,
+        name: "elektrisch beest",
+        brand: "Tesla",
+        type: "Model 3",
+        color: "blauw",
+        year: 2022,
+        note: "stil, snel en futuristisch"
+    }
 ];
