@@ -2,11 +2,12 @@ import {Persons} from "../components/Persons";
 import {Card, Col, Container, Row} from "react-bootstrap";
 
 function PersonAge(props) {
-    const {age} = props;
+    const {age, persons} = props;
     return (
         <Col className="m-0" xs={12} sm={6} md={4} lg={3} xl={2} xxl={2}>
             <Card className="m-1 p-2 shadow-sm text-center">
                 <h5>{age}</h5>
+                <div>{persons.filter(p => p.age === age).map(p => p.name).join(", ")}</div>
             </Card>
         </Col>
     );
@@ -21,7 +22,7 @@ function PersonAges(props) {
             <h2 className="text-center">{title}</h2>
             <Container fluid>
                 <Row>
-                    {uniqueAgesSorted.map(a => <PersonAge key={a} age={a}/>)}
+                    {uniqueAgesSorted.map(a => <PersonAge key={a} age={a} persons={persons}/>)}
                 </Row>
             </Container>
         </div>
