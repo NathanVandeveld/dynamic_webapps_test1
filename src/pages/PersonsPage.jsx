@@ -1,16 +1,13 @@
 import {Persons} from "../components/Persons";
-import {Card, Col} from "react-bootstrap";
 import {Section} from "../components/Section.jsx";
+import {SectionCard} from "../components/SectionCard.jsx";
 
 function PersonAge(props) {
     const {age, persons} = props;
     return (
-        <Col className="m-0" xs={12} sm={6} md={4} lg={3} xl={2} xxl={2}>
-            <Card className="m-1 p-2 shadow-sm text-center">
-                <h5>{age}</h5>
-                <div>{persons.filter(p => p.age === age).map(p => p.name).join(", ")}</div>
-            </Card>
-        </Col>
+        <SectionCard title={age}>
+            <div>{persons.filter(p => p.age === age).map(p => p.name).join(", ")}</div>
+        </SectionCard>
     );
 }
 
@@ -29,12 +26,9 @@ function PersonAges(props) {
 function City(props) {
     const {city} = props;
     return (
-        <Col className="m-0" xs={12} sm={6} md={4} lg={3} xl={2} xxl={2}>
-            <Card className="m-1 p-2 shadow-sm text-center">
-                <h5>{city.city}</h5>
-                <div>{city.numberOfPersons}</div>
-            </Card>
-        </Col>
+        <SectionCard title={city.city}>
+            <div>{city.numberOfPersons}</div>
+        </SectionCard>
     );
 }
 

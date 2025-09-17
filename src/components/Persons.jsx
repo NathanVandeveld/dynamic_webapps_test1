@@ -1,16 +1,13 @@
-import {Card, Col} from "react-bootstrap";
 import {Section} from "./Section.jsx";
+import {SectionCard} from "./SectionCard.jsx";
 
 function Person(props) {
     const {person} = props;
     return (
-        <Col className="m-0" xs={12} sm={6} md={4} lg={3} xl={2} xxl={2}>
-            <Card className="m-1 p-2 shadow-sm text-center">
-                <h5>{person.name}</h5>
-                <div>{person.age}</div>
-                <div>{person.city}</div>
-            </Card>
-        </Col>
+        <SectionCard title={person.name}>
+            <div>{person.age}</div>
+            <div>{person.city}</div>
+        </SectionCard>
     );
 }
 
