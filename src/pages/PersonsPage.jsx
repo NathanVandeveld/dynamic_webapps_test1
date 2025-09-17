@@ -5,6 +5,8 @@ export function PersonsPage(props) {
     return (
         <div className="mx-3">
             <Persons persons={persons} title="alle personen"/>
+            <Persons persons={persons.toSorted((pl, pr) => pl.name.localeCompare(pr.name))}
+                     title="sorteer op naam"/>
         </div>
     );
 }
