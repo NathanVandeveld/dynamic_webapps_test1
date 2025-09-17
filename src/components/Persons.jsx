@@ -1,4 +1,5 @@
-import {Card, Col, Container, Row} from "react-bootstrap";
+import {Card, Col} from "react-bootstrap";
+import {Section} from "./Section.jsx";
 
 function Person(props) {
     const {person} = props;
@@ -16,14 +17,9 @@ function Person(props) {
 export function Persons(props) {
     const {persons, title} = props;
     return (
-        <div className="mt-3 pb-2 rounded shadow-sm" style={{backgroundColor: "lavender"}}>
-            <h2 className="text-center">{title}</h2>
-            <Container fluid>
-                <Row>
-                    {persons.map(p => <Person key={p.id} person={p}/>)}
-                </Row>
-            </Container>
-        </div>
+        <Section title={title}>
+            {persons.map(p => <Person key={p.id} person={p}/>)}
+        </Section>
     );
 }
 

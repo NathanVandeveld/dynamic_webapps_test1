@@ -1,5 +1,6 @@
 import {Persons} from "../components/Persons";
-import {Card, Col, Container, Row} from "react-bootstrap";
+import {Card, Col} from "react-bootstrap";
+import {Section} from "../components/Section.jsx";
 
 function PersonAge(props) {
     const {age, persons} = props;
@@ -19,14 +20,9 @@ function PersonAges(props) {
     const uniqueAges = [...new Set(ages)];
     const uniqueAgesSorted = uniqueAges.toSorted((n1, n2) => n1 - n2);
     return (
-        <div className="mt-3 pb-2 rounded shadow-sm" style={{backgroundColor: "lavender"}}>
-            <h2 className="text-center">{title}</h2>
-            <Container fluid>
-                <Row>
-                    {uniqueAgesSorted.map(a => <PersonAge key={a} age={a} persons={persons}/>)}
-                </Row>
-            </Container>
-        </div>
+        <Section title={title}>
+            {uniqueAgesSorted.map(a => <PersonAge key={a} age={a} persons={persons}/>)}
+        </Section>
     );
 }
 
@@ -50,14 +46,9 @@ function Cities(props) {
         ({city: c, numberOfPersons: persons.filter(p => p.city === c).length}));
     const citiesSorted = citiesWithNumberOfPersons.toSorted((c1, c2) => c1.numberOfPersons - c2.numberOfPersons);
     return (
-        <div className="mt-3 pb-2 rounded shadow-sm" style={{backgroundColor: "lavender"}}>
-            <h2 className="text-center">{title}</h2>
-            <Container fluid>
-                <Row>
-                    {citiesSorted.map(c => <City key={c.city} city={c}/>)}
-                </Row>
-            </Container>
-        </div>
+        <Section title={title}>
+            {citiesSorted.map(c => <City key={c.city} city={c}/>)}
+        </Section>
     );
 }
 
