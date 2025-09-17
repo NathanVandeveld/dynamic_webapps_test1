@@ -25,9 +25,12 @@ function Car(props) {
     const {car} = props;
     return (
         <SectionCard title={car.name}>
-            {car.brand && <div>merk: {car.brand}</div>}
-            {car.type && <div>type: {car.type}</div>}
-            {car.color && <div>kleur: {car.color}</div>}
+            <div>
+                {car.brand && <span>{car.brand}</span>}
+                {car.type && <span> / {car.type}</span>}
+                {car.year && <span> ({car.year})</span>}
+            </div>
+            {car.note && <div className="mt-2">opm: {car.note}</div>}
             <div className="mt-auto">
                 <CarColor color={car.color}/>
             </div>
