@@ -283,3 +283,149 @@ export const WIKI_TEST_DATA = [
     },
 
 ];
+export const BACKPACK_ITEMS = [
+    {
+        id: 1,
+        name: "Zakmes",
+        category: "survival",
+        weightGrams: 250,
+        necessary: true,
+        materials: ["staal", "hout"],
+        functions: ["snijden", "blik openen", "schroeven draaien", "noodgeval"],
+        tags: ["kamperen", "avontuur", "noodgeval"],
+        owner: "Tom",
+        condition: "goed"
+    },
+    {
+        id: 2,
+        name: "EHBO-kit",
+        category: "survival",
+        weightGrams: 480,
+        necessary: true,
+        materials: ["katoen", "plastic"],
+        functions: ["wondverzorging", "ontsmetten"],
+        tags: ["noodgeval", "gezondheid", "hike"],
+        owner: "Layla",
+        condition: "ongebruikt"
+    },
+    {
+        id: 3,
+        name: "Touw",
+        category: "survival",
+        weightGrams: 760,
+        necessary: false,
+        materials: ["nylon", "kernmantel"],
+        functions: ["ophangen", "zekeren"],
+        tags: ["avontuur", "bergen", "kamperen"],
+        owner: "Lieve",
+        condition: "goed"
+    },
+    {
+        id: 4,
+        name: "Kompas",
+        category: "navigatie",
+        weightGrams: 150,
+        necessary: false,
+        materials: ["metaal", "glas", "plastic"],
+        functions: ["oriëntatie"],
+        tags: ["oriëntatie", "bos", "wandeling"],
+        owner: "Bart",
+        condition: "goed"
+    },
+    {
+        id: 5,
+        name: "Topokaart",
+        category: "navigatie",
+        weightGrams: 95,
+        necessary: false,
+        materials: ["papier", "coating"],
+        functions: ["oriëntatie", "noodnavigatie", "route plannen"],
+        tags: ["wandeling", "regen", "bos"],
+        owner: "Leen",
+        condition: "licht beschadigd"
+    },
+    {
+        id: 6,
+        name: "GPS-handheld",
+        category: "navigatie",
+        weightGrams: 210,
+        necessary: true,
+        materials: ["kunststof", "elektronica"],
+        functions: ["oriëntatie", "route volgen", "hoogte meten", "noodgeval"],
+        tags: ["oriëntatie", "bergen", "lange tocht"],
+        owner: "Yves",
+        condition: "goed"
+    },
+    {
+        id: 7,
+        name: "Slaapzak",
+        category: "overnachten",
+        weightGrams: 1180,
+        necessary: true,
+        materials: ["nylon", "dons"],
+        functions: ["isolatie", "warmte"],
+        tags: ["kamperen", "winter", "tent"],
+        owner: "Ahmed",
+        condition: "gebruikt"
+    },
+    {
+        id: 8,
+        name: "Matje",
+        category: "overnachten",
+        weightGrams: 420,
+        necessary: true,
+        materials: ["schuim", "folie"],
+        functions: ["isolatie"],
+        tags: ["tent", "hike", "kamperen"],
+        owner: "Dirk",
+        condition: "goed"
+    },
+    {
+        id: 9,
+        name: "Waterfles",
+        category: "eten & drinken",
+        weightGrams: 780,
+        necessary: true,
+        materials: ["kunststof", "rubber"],
+        functions: ["water bewaren"],
+        tags: ["wandeling", "hitte", "kamperen"],
+        owner: "Marie",
+        condition: "nieuw"
+    },
+    {
+        id: 10,
+        name: "Kookset",
+        category: "eten & drinken",
+        weightGrams: 940,
+        necessary: false,
+        materials: ["roestvrij staal", "aluminium", "siliconen"],
+        functions: ["water koken", "eten verwarmen", "koken", "noodgeval"],
+        tags: ["eten", "kamperen", "bergen"],
+        owner: "Yves",
+        condition: "goed"
+    },
+    {
+        id: 11,
+        name: "Powerbank",
+        category: "elektronica",
+        weightGrams: 320,
+        necessary: true,
+        materials: ["lithium", "kunststof"],
+        functions: ["opladen", "noodstroom"],
+        tags: ["lange tocht", "nacht", "hike"],
+        owner: "Furkan",
+        condition: "goed"
+    },
+    {
+        id: 12,
+        name: "Zaklamp",
+        category: "elektronica",
+        weightGrams: 290,
+        necessary: true,
+        materials: ["aluminium", "glas"],
+        functions: ["licht geven", "signalen sturen", "noodgeval", "oriëntatie"],
+        tags: ["nacht", "grot", "kamperen"],
+        owner: "Tom",
+        condition: "goed"
+    }
+];

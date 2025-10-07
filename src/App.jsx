@@ -2,7 +2,7 @@ import 'normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-tabs/style/react-tabs.css';
 import './App.css'
-import {CAR_DATA, NUMBER_DATA, PERSON_DATA, PRODUCTS_DATA, WIKI_TEST_DATA} from "./data/data.js";
+import {BACKPACK_ITEMS, CAR_DATA, NUMBER_DATA, PERSON_DATA, PRODUCTS_DATA, WIKI_TEST_DATA} from "./data/data.js";
 import {MenuCardPage} from "./pages/MenuCardPage.jsx";
 import {PicturesPage} from "./pages/PicturePage.jsx";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
@@ -10,6 +10,7 @@ import {CarsPage} from "./pages/CarsPage.jsx";
 import {PersonsPage} from "./pages/PersonsPage.jsx";
 import {NumbersPage} from "./pages/NumbersPage.jsx";
 import {WikiPage} from "./pages/WikiPage.jsx";
+import {BackPackPage} from "./pages/BackPackPage.jsx";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <Tab>cars</Tab>
                 <Tab>numbers</Tab>
                 <Tab>wiki</Tab>
+                <Tab>rugzak</Tab>
             </TabList>
             <TabPanel>
                 <MenuCardPage products={PRODUCTS_DATA}/>
@@ -39,6 +41,9 @@ function App() {
             </TabPanel>
             <TabPanel>
                 <WikiPage wikidata={WIKI_TEST_DATA}/>
+            </TabPanel>
+            <TabPanel>
+                <BackPackPage backpackItems={BACKPACK_ITEMS}/>
             </TabPanel>
         </Tabs>)
 }
